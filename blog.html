@@ -26,6 +26,42 @@
         </nav>
     </header>
     <!-- Header/Navbar section end -->
+    <main class="mt-5 container mx-auto">
+        <article class="mt-5">
+            <div tabindex="0" class="collapse collapse-plus rounded border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-bold">
+                    1.What is the difference between the map(), forEach(), filter() and find() array methods?
+                </div>
+                <div class="collapse-content">
+                    <p class="mt-3">The map() method:
+                        The map() method loops through each element in array and calls the provided function for each
+                        element. This method returns a new array according to the provided callback function and doesn’t
+                        change the original array.
+                    </p>
+                    <p class="mt-3">The forEach() method:
+                        The forEach() method is also used to execute the same code on every element in an array but does
+                        not returns a new array based on the given array and it returns undefined and not executed for
+                        empty elements.</p>
+                    <p class="mt-3">The filter() method
+                        The filter() method returns the element that matches and removes the element that does not
+                        match. filter() method search whole array from start to end and returns all the value which is
+                        matched.</p>
+                    <p class="mt-3">The find() method:
+                        The find() method return the first value which match from the collection of array . find()
+                        method search the array from the start if the desired value is matched then find() method return
+                        that value and terminate and rest of the array is not process.</p>
+                    <p class="mt-3">If we want the benefits of the return value or somehow we don’t want to
+                        change the original array then proceed with the map() otherwise, forEach() could be the better
+                        choice.
+
+                        When more than one element is expected to be returned and we want to check all elements, then we
+                        can use the filter() method. But if we expect only a single element to be returned from the
+                        array, then we can use find() and avoid extra iterations.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
 
 </body>
 
