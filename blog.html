@@ -95,6 +95,40 @@
                 </div>
             </div>
         </article>
+        <article class="mt-5">
+            <div tabindex="0" class="collapse collapse-plus rounded border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-bold bg-accent">
+                    4.How does quizTimer() function work in this project ?
+                </div>
+                <div class="collapse-content">
+                    <p class="mt-3">When we call the function quizTimer() from index.js,then it will execute the
+                        function from noChange.js file. When we check dismiss parameter, by default it shows undefined
+                        value,then we use clearInterval() method to clear the timer. By default we set null value to the
+                        timer at index.js file. Now we use setInterval() method to show mins and seconds at the timer.By
+                        default count value is setting by 0 at index.js file and using Math.floor() method covtMin value
+                        will be 0. we again calculate the mod value and then using ternary operator and template string
+                        we find the min and sec value to 00. Again we increment the value of count and check
+                        if-condition for the timer. To stop setInterval(),we use clearInterval() for the timer.</p>
+                </div>
+            </div>
+        </article>
+        <article class="mt-5">
+            <div tabindex="0" class="collapse collapse-plus rounded border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-bold bg-accent">
+                    5.How does chooseQuiz() function work in this project ?
+                </div>
+                <div class="collapse-content">
+                    <p class="mt-3"> chooseQuiz() has two parameters: index parameter shows the index of the array and
+                        givenAns shows the option we clicked.By using find() method we check the ans.id with the
+                        quizData's index id until it is equal and then assigned the value into isExist variable.If
+                        isExist true ,then we check (isExist.id === quiz.id) by using for-of loop and increment serial
+                        value until it is equal. Then we use splice() method to change the contents of the original
+                        array by replacing existing elements or adding new elements in place. when we find the index and
+                        givenAns ,then terminate the current loop using break and call the displayAnswers(answers)
+                        function </p>
+                </div>
+            </div>
+        </article>
 
     </main>
 
